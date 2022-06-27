@@ -30,10 +30,10 @@ public class Election {
             } else {
                 continue;
             }
-
-
         }
     }
+
+
 
 
 

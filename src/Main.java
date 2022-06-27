@@ -21,9 +21,11 @@ public class Main {
             Election election = new Election();
             newCandidate.setSingleCandidateName(line);
             election.setYear(year);
-//            election.setCandidates(line);
+            newCandidate.setCandidateParty(line, newCandidate);
+            newCandidate.setRunningMateName(line);
             System.out.println("Hello Welcome to the " + year + " election");
-            System.out.println(newCandidate.name);
+            System.out.println(newCandidate.name + " is the candidate for the " + newCandidate.party + " party" + " the running mate is " + newCandidate.runningMate);
+
 
 	    } catch (IOException e) {
             e.printStackTrace();
